@@ -5,9 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 jobs:
   Deploiement:
     runs-on: ubuntu-latest
@@ -17,5 +15,5 @@ jobs:
       - name: Déploiement sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: .
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
