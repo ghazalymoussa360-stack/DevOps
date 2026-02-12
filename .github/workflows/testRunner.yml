@@ -7,9 +7,8 @@ jobs:
   test-runner:
     runs-on:
       - self-hosted
-      - Windows
-      - x64
       - Linux
+      - x64
     steps:
        - uses: actions/checkout@v3
        - run: echo "Test Runner is running on a self-hosted Windows runner."
