@@ -9,6 +9,7 @@ jobs:
       - self-hosted
       - Windows
       - x64
+      - Linux
     steps:
        - uses: actions/checkout@v3
        - run: echo "Test Runner is running on a self-hosted Windows runner."
